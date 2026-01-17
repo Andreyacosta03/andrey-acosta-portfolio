@@ -1,46 +1,46 @@
-# Astro Starter Kit: Basics
+# Andrey Acosta | Frontend Developer
 
-```sh
-npm create astro@latest -- --template basics
-```
+Welcome to my personal portfolio repository! This project is a minimalist, high-performance website built to showcase my work, skills, and professional journey.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Tech Stack
 
-## 🚀 Project Structure
+- **Framework:** Main Framework
+- **Styling:** CSS / Tailwind CSS
+- **Language:** TypeScript
 
-Inside of your Astro project, you'll see the following folders and files:
+## ✨ Key Features
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- **High Performance:** Lighthouse achieves near-perfect scores thanks to Astro's JavaScript-free approach by default.
+- **Component-Driven:** Built with reusable Astro components for cards, layouts, and navigation.
+- **Responsive Design:** Fully optimized for mobile devices, tablets, and desktops.
+- **Minimalist Aesthetics:** Clean user interface inspired by modern design trends.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📂 Project Structure
 
-## 🧞 Commands
+src/
 
-All commands are run from the root of the project, from a terminal:
+- components/ # Reusable sections and components
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- layouts/ # Base landing page layout
 
-## 👀 Want to learn more?
+- pages/ # index.astro (single page)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- data/ # Static data (skills, projects, experience)
+
+- styles/ # Global styles
+
+- assets/ # Images and icons
+
+## 🛠️ Getting Started
+
+To run this project locally, follow these steps:
+
+**Clone the repository:**
+
+1. git clone [https://github.com/andrey-acosta-dev/portfolio.git](https://github.com/andrey-acosta-dev/portfolio.git)
+
+2. Navigate to the project folder: cd portfolio
+
+3. Install dependencies: npm install
+
+4. Start the development server: npm run dev
