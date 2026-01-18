@@ -14,5 +14,9 @@
     "astro": "^5.16.9",
     "astro-robots-txt": "^1.0.0",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "prettier": "3.8.0",
+    "prettier-plugin-astro": "0.14.1"
   }
 }
