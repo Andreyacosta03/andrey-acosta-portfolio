@@ -1,4 +1,6 @@
 ---
+import Logo from "./Logo.astro";
+import NavLink from "./NavLink.astro";
 // Navigation items
 const navItems = [
   { title: "Inicio", label: "inicio", url: "#inicio" },
@@ -14,39 +16,11 @@ const navItems = [
     <div
       class="max-w-6xl mx-auto px-6 min-h-20 flex items-center justify-between"
     >
-      <div class="flex items-center gap-2">
-        <div
-          class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-black font-bold text-xs"
-        >
-          AA
-        </div>
-        <span class="font-bold tracking-tight text-xl">Andrey Acosta</span>
-      </div>
-
+      <Logo />
       <div
         class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400"
       >
-        {
-          navItems.map((item) =>
-            item.title !== "Contacto" ? (
-              <a
-                aria-label={item.label}
-                href={item.url}
-                class="hover:text-emerald-400 transition-colors"
-              >
-                {item.title}
-              </a>
-            ) : (
-              <a
-                aria-label={item.label}
-                href={item.url}
-                class="bg-white/10 px-4 py-2 rounded-full text-white hover:bg-emerald-500 hover:text-black transition-all border border-white/10"
-              >
-                {item.title}
-              </a>
-            ),
-          )
-        }
+        {navItems.map((item) => <NavLink {...item} />)}
       </div>
     </div>
   </nav>
