@@ -1,0 +1,27 @@
+---
+import Logo from "./Logo.astro";
+import NavLink from "./NavLink.astro";
+// Navigation items
+const navItems = [
+  { title: "Inicio", label: "inicio", url: "#inicio" },
+  { title: "Proyectos", label: "proyectos", url: "#proyectos" },
+  { title: "Experiencia", label: "experiencia", url: "#experiencia" },
+  { title: "Sobre mí", label: "sobre-mi", url: "#sobre-mi" },
+  { title: "Contacto", label: "contacto", url: "#contacto" },
+];
+---
+
+<header class="fixed top-0 w-full z-50">
+  <nav class="w-full border-b border-white/5 bg-black/50 backdrop-blur-md">
+    <div
+      class="max-w-6xl mx-auto px-6 min-h-20 flex items-center justify-between"
+    >
+      <Logo />
+      <div
+        class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400"
+      >
+        {navItems.map((item) => <NavLink {...item} />)}
+      </div>
+    </div>
+  </nav>
+</header>
