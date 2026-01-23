@@ -1,10 +1,16 @@
 ---
-
-import Layout from '../layouts/Layout.astro';
-
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<Layout title="Porfolio de Andrey Acosta - Desarrollador y Programador Web " 
-description="Contrata a Andrey para crear tu aplicación web o móvil. Desarrollador Web . Especializado en crear aplicaciones únicas.">
-	
+<Layout
+  title="Porfolio de Andrey Acosta - Desarrollador y Programador Web "
+  description="Contrata a Andrey para crear tu aplicación web o móvil. Desarrollador Web . Especializado en crear aplicaciones únicas."
+>
+  <main class="pt-32 pb-20 px-6">
+    <Section id="hero" class="max-w-6xl mx-auto">
+      <Hero />
+    </Section>
+  </main>
 </Layout>

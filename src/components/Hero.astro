@@ -1,0 +1,99 @@
+---
+import Badge from "./Badge.astro";
+import GitHub from "./icons/GitHub.astro";
+import Mail from "./icons/Mail.astro";
+import SocialLink from "./SocialLink.astro";
+---
+
+<div>
+  <Badge />
+  <div class="grid lg:grid-cols-2 gap-12 items-start">
+    <div w-full>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6"
+      >
+        Desarrollador
+        <span
+          class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+        >
+          Frontend.
+        </span>
+      </h1>
+      <p class="text-gray-400 text-base sm:text-xl leading-relaxed max-w-lg">
+        Apasionado por crear experiencias web
+        <span class="text-white">interactivas y funcionales</span>. Me
+        especializo en React y tecnologías modernas para construir productos que
+        marquen la diferencia.
+      </p>
+
+      <div
+        class="mt-10 flex flex-col min-[480px]:flex-row gap-4 w-full sm:w-auto"
+      >
+        <!-- Botón Primario: Ver Proyectos -->
+        <button
+          class="w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-200
+    bg-emerald-500 text-slate-900 shadow-lg shadow-emerald-500/20
+    md:text-base md:px-8 md:py-4 lg:font-bold
+    hover:bg-emerald-400 hover:-translate-y-0.5 active:scale-95"
+        >
+          Ver Proyectos
+        </button>
+
+        <!-- Botón Secundario: Descargar CV -->
+        <button
+          class="w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-200
+    bg-white/5 text-white border border-white/10
+    md:text-base md:px-8 md:py-4
+    hover:bg-white/10 hover:-translate-y-0.5 active:scale-95"
+        >
+          Descargar CV
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div class="hidden lg:block relative group">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+        >
+        </div>
+        <div
+          class="relative bg-neutral-900 border border-white/10 p-8 rounded-2xl h-80 flex flex-col justify-center overflow-hidden"
+        >
+          <code class="text-emerald-400 text-sm leading-relaxed">
+            <span class="text-purple-400">const</span> skills = [<br />
+            &nbsp;&nbsp;<span class="text-yellow-300">"React"</span>,
+            <span class="text-yellow-300">"Tailwind"</span>,<br />
+            &nbsp;&nbsp;<span class="text-yellow-300">"JavaScript"</span>,
+            <span class="text-yellow-300">"Next.js"</span><br />
+            ];<br /><br />
+            <span class="text-purple-400">if</span>
+            (project.needsInnovation) &lcub; <br />
+            hire(AndreyAcosta);<br />
+            &rcub;
+          </code>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-5 mt-10 justify-end">
+        <SocialLink
+          href="https://github.com"
+          title="Visitar GitHub"
+          class="flex items-center gap-2 px-6 py-3 bg-neutral-900 border border-white/10 rounded-xl hover:bg-white hover:text-black transition-all font-semibold"
+          text="GitHub"
+        >
+          <GitHub class="size-6" />
+        </SocialLink>
+
+        <SocialLink
+          href="mailto:tu@email.com"
+          title="Enviar Email"
+          class="flex items-center gap-2 px-6 py-3 bg-neutral-900 border border-white/10 rounded-xl transition-all font-semibold hover:bg-neutral-800"
+          text="Email"
+        >
+          <Mail class="size-6" />
+        </SocialLink>
+      </div>
+    </div>
+  </div>
+</div>
